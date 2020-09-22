@@ -1,0 +1,119 @@
+TO RUN APP
+
+For Server
+    cd mern-exercise-tracker
+    cd backend
+    nodemon server
+
+For App
+    cd mern-exercise-tracker
+    npm start
+
+
+
+create react app without installing it
+    npx create-react-app mern-exercise-tracker
+
+Then go to -> cd mern-exercise-tracker
+
+create new folder backend
+
+terminal -> cd backend
+
+Then create package.json by typing "npm init -y" for all yesin terminal
+
+terminal -> npm install express cors mongoose dotenv
+cors - cross origin resource sharing
+dotenv - loads env vairable from .env file to process.env
+
+installing globally -> npm install -g nodemon
+it automatically restart node app when file changes in directory are detected
+
+TILL 15:00
+
+server.js inside backend
+
+Terminal -> nodemon server
+
+.env inside backend
+
+dbname: exercise-tracker
+password: exercise-tracker
+DATABASE Settings in mongo db atlas
+THen 2nd option to coonect -> Connect your application
+
+TILL 20:55
+
+New folder models inside backend for db
+    exercise.model.js
+    user.model.js
+
+TILL 23:55
+
+Inside Backend create routes folder
+    exercises.js
+    users.js
+
+
+POSTMAN 
+
+http://localhost:5000/users/add POST
+
+Body -> raw -> json
+
+{
+    "username": "Abhinav"
+}
+
+http://localhost:5000/users/ GET
+
+http://localhost:5000/exercises/add POST
+
+{
+    "username": "Abhinav",
+    "description": "Pushups",
+    "duration": 10,
+    "date": "2020-09-01T07:59:12.877Z"
+}
+
+http://localhost:5000/exercises/ GET
+
+
+TILL 37:20
+
+http://localhost:5000/exercises/5f4e005d6a3911382402b949 get by id
+
+http://localhost:5000/exercises/update/5f4e005d6a3911382402b949 Update by id
+
+{
+    "username": "Nayan",
+    "description": "Walking",
+    "duration": 123,
+    "date": "2020-09-01T06:50:12.877Z"
+}
+
+TILL 43:30
+
+check public index.html
+
+go to cd mern-exercise-tracker
+        npm start
+
+in src - index.js and app .js
+
+add bootsrap by terminal -> npm install bootstrap
+
+setup react router - npm install react-router-dom
+
+TILL 54:15
+
+import components in app.js
+
+create components folder inside app src directory
+
+npm install react-datepicker for DatePicker component user in create-exercise.component.js
+
+terminal -> npm install axios
+for http request
+
+Till 1:34:00
